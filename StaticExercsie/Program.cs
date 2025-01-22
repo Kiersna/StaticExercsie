@@ -31,7 +31,7 @@
 
     public static string GetTotalAccounts()
     {
-        return($"Łącznie jest utworzonych {BankAccount.totalAccounts} kont");
+        return($"Łącznie utworzonych kont jest: {BankAccount.totalAccounts} ");
     }
     public static void Main()
     {
@@ -43,6 +43,6 @@
         BankAccount account2 = new BankAccount("789101", 1000);
         Console.WriteLine(account2.GetAccountInfo());  // "Account: 789101, Balance: 1000.00"
 
-        Console.WriteLine("Total Accounts: " + BankAccount.GetTotalAccounts());  // np. "Total Accounts: 2"
+        Console.WriteLine(BankAccount.GetTotalAccounts());  // 2
     }
 }
